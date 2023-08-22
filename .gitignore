@@ -128,3 +128,11 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# css and maps 
+src/**/*.css
+src/**/*.map
+src/*.css.map
+!src/assets/*.css
+!src/assets/*.css.map
+public/screenshots/*.png
