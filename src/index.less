@@ -37,6 +37,10 @@ ul {
   padding: 0;
 }
 
+img {
+  max-width: 100%;
+}
+
 * {
   box-sizing: border-box;
   font-family: @font-family !important;
@@ -70,7 +74,7 @@ ul {
     max-width: 1140px;
   }
   @media (min-width: 1400px) {
-    max-width: 1336px;
+    max-width: 1236px;
   }
 }
 
@@ -676,6 +680,153 @@ ul {
 
 
 /**** Global Styling End ****/
+
+/** Home Page **/
+
+.home-page {
+  margin-top: 60px;
+}
+
+.owner-detail-sec {
+  margin-bottom: 23px;
+  .img-detail {
+    position: relative;
+    .resize-icon {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 42px;
+      height: 42px;
+      background: #FFF;
+      box-shadow: 0px 5px 20px 0px #DDD;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .img {
+      img {max-height: 95%;}
+    }
+    .info-icon {
+      position: absolute;
+      bottom: 20px;
+      right: 17px;
+      width: 30px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .widget-head {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 40px;
+    .MuiAvatar-circular {
+      background: #F4F4F4;
+    }
+    .MuiAvatar-img {
+      width: 46px;
+      height: 46px;
+      object-fit: inherit;
+    }
+    .head-caption {
+      .title {
+        font-size: 18px;
+        line-height: 22px;
+        display: block;
+        letter-spacing: 0.36px;
+      }
+      span {
+        color: #4A4848;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.28px;
+      }
+    }
+  }
+
+  .widget-body {
+    margin-bottom: 40px;
+    .title {
+      font-size: 30px;
+      font-weight: 400 !important;
+      line-height: 35px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    p {
+      margin: 0;
+      color: #4A4848;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 29px;
+    }
+  }
+
+  .widget-footer {
+    .MuiFormLabel-root {
+      color: #000;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 21px;
+      top: 7px;
+      left: 6px;
+      &[data-shrink="true"] {
+        top: 0;
+        left: 0;
+      }
+    }
+    .MuiSelect-select {
+      min-height: 37px;
+      padding-left: 20px;
+      padding-right: 50px !important;
+    }
+    .MuiOutlinedInput-notchedOutline {
+      border-color: transparent !important;
+    }
+    .MuiFormControl-root {
+      .icon {
+        position: absolute;
+        top: 35px;
+        right: 22px;
+        transform: translate(0, -50%);
+      }
+    }
+  }
+
+  .current-owner {
+    display: flex;
+    align-items: flex-end;
+    gap: 40px;
+    margin-bottom: 30px;
+    .text {
+      display: block;
+      color: #4A4848;
+      font-size: 15px;
+      line-height: 18px;
+      text-transform: capitalize;
+      margin-bottom: 15px;
+    }
+    .owner-view {
+      display: flex;
+      align-items: center;
+      .title {
+        margin-left: 12px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        svg {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+}
+
+/** Home Page End **/
 
 /** Tracker Trail **/
 .tracker-page {
