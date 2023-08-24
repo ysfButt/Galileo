@@ -20,27 +20,33 @@ const theme = createTheme({
 
 const AppLayout = props => {
   const { routes } = props;
+
+  const pathName = window.location.pathname;
   
   return (
     <div className="layout">
 
+      {/* Main Header */}
+      <MainHeader theme={theme} />
+      {/* Main Header End */}
+
       {/* Main Content */}
       <main className="main-content">
-
-        {/* Main Header */}
-        <MainHeader theme={theme} />
-        {/* Main Header End */}
 
         {/* Layout Routes Or Pages To Render */}
         <LayoutRoutes {...props} routes={routes} theme={theme} />
         {/* Layout Routes Or Pages To Render End */}
         
-        {/* Main Footer */}
-        <MainFooter theme={theme} />
-        {/* Main Footer End */}
-
       </main>
       {/* Main Content End */}
+
+      {/* Main Footer */}
+      {pathName === "/tracker" ? 
+        null
+        :
+        <MainFooter theme={theme} />
+      }
+      {/* Main Footer End */}
 
     </div>
   )
