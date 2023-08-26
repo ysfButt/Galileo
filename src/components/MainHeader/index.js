@@ -57,7 +57,7 @@ const MainHeader = () => {
 
   return (
     <header className="main-header">
-      <div className="container-sm pd-0 pd-0">
+      <div className="container-sm pd-0">
         <div className="main-header-inner">
           {/* Logo */}
           <h1 className="logo">
@@ -89,6 +89,15 @@ const MainHeader = () => {
             <div className="driving-wrap">Sheer Driving <strong>Pleasure</strong></div>
           </div>
           {/* Main Menu Wrap End */}
+          {/* Mobile Menu */}
+          <div className="mobile-menu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+              <path d="M4 9.33301H28" stroke="#262626" stroke-width="1.6" stroke-linecap="round"/>
+              <path d="M4 16H28" stroke="#262626" stroke-width="1.6" stroke-linecap="round"/>
+              <path d="M4 22.667H28" stroke="#262626" stroke-width="1.6" stroke-linecap="round"/>
+            </svg>
+          </div>
+          {/* Mobile Menu End */}
         </div>
       </div>
     </header>

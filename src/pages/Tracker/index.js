@@ -6,7 +6,7 @@ const Tracker = ({ theme }) => {
 
   return (
     <div className="tracker-page">
-      <div className="container-sm">
+      <div className="container-sm pd-0">
         {/* Main Heading */}
         <div className="main-heading">
           <h3 className="title">Track your NFT history</h3>
@@ -16,17 +16,21 @@ const Tracker = ({ theme }) => {
         {/* Search Bar */}
         <div className="search-bar">
           <TextField
-            label="Size"
+            label="Enter Serial Number"
             id="outlined-size-small"
-            defaultValue="Small"
-            size="small"
+            fullWidth
+            sx={{ minHeight: 70 }}
           />
           {/* <TextField id="outlined-basic" label="Outlined" variant="outlined" /> */}
-          <Button variant="outlined">Outlined</Button>
+          <Button variant="outlined" size="large">Track</Button>
         </div>
         {/* Search Bar End */}
 
         <p>By initiating authentication, you declare that you accept or <a href="/">legal Notice</a> and <a href="/">Privacy Policy</a></p>
+
+        <div className="mobile-view">
+          <Button variant="outlined" size="large">Back Home</Button>
+        </div>
       </div>
     </div>
   )
